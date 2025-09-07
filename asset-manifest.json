@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/estore2/static/css/main.b10ab080.css",
+    "main.js": "/estore2/static/js/main.70a395d5.js",
+    "static/js/453.8198bee8.chunk.js": "/estore2/static/js/453.8198bee8.chunk.js",
+    "static/media/InknutAntiqua-Bold.ttf": "/estore2/static/media/InknutAntiqua-Bold.bc9e8c59d28b7a04c7b8.ttf",
+    "static/media/test-good.jpg": "/estore2/static/media/test-good.6baec1919f9996c502ce.jpg",
+    "static/media/default.webp": "/estore2/static/media/default.785ea11cb26726729832.webp",
+    "static/media/user.png": "/estore2/static/media/user.23de44131e400b6a8368.png",
+    "static/media/Group 2.svg": "/estore2/static/media/Group 2.ee1643f81deedca8649c686fb960b32f.svg",
+    "index.html": "/estore2/index.html",
+    "main.b10ab080.css.map": "/estore2/static/css/main.b10ab080.css.map",
+    "main.70a395d5.js.map": "/estore2/static/js/main.70a395d5.js.map",
+    "453.8198bee8.chunk.js.map": "/estore2/static/js/453.8198bee8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b10ab080.css",
+    "static/js/main.70a395d5.js"
+  ]
+}
