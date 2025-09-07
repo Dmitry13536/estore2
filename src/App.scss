@@ -1,0 +1,470 @@
+@font-face {
+  font-family: "intic";
+  src: url(./assets/fonts/Inknut_Antiqua/InknutAntiqua-Bold.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #57d4f0 8%, #ececec 95%, #6cd5ec);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+button:active {
+  transform: translateY(2px);
+  filter: brightness(0.9);
+}
+
+p {
+  margin: 0;
+}
+
+.logo {
+  margin-top: 10px;
+  display: flex;
+  width: 100vw;
+  height: 40vh;
+  justify-content: center;
+
+  &__text {
+    position: absolute;
+    background: linear-gradient(to bottom, #16625a, #2dc8b8 50%);
+    background-clip: text;
+    color: transparent;
+    font-size: 58px;
+    font-weight: 600;
+    font-family: "intic";
+    top: 80px;
+  }
+}
+
+.buttonBlue {
+  margin-top: 7em;
+  background: #57d4f0;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25),
+    0 0 60px 40px rgba($color: rgb(255, 255, 255), $alpha: 1);
+
+  & p {
+    color: #16625a;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "intic";
+    margin: 0;
+  }
+}
+
+.buttonMint {
+  background-color: #25958a;
+  color: white;
+  box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 1px;
+  width: 80%;
+  height: 10%;
+}
+
+.inputReg {
+  background: rgba($color: #ffffff, $alpha: 0.55);
+  border: none;
+  text-align: center;
+  width: 15em;
+  height: 3em;
+  font-size: 20px;
+  font-family: "intic";
+  outline: none;
+  box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+  margin-bottom: 0.5em;
+}
+
+.start {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+
+  & form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 0;
+  }
+}
+
+.loginText {
+  font-size: 28px;
+  font-family: "intic";
+  color: #16625a;
+  margin: 0;
+
+  &.singup {
+    margin: 39px 0 18px 0;
+  }
+}
+
+.w-15 {
+  width: 15em;
+}
+
+.m-25 {
+  margin-bottom: 25px;
+}
+
+a {
+  color: #000000;
+  font-family: "intic";
+  font-size: 14px;
+}
+
+.profile {
+  background: linear-gradient(#2dc8b8 88%, #25958a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-size: 32px;
+  max-height: 100vh;
+  height: 100vh;
+
+  &:first-child {
+    padding: 20px;
+  }
+
+  &__page-title {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+  &__products {
+    flex-grow: 1;
+  }
+
+  &__settings {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+
+    & button {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__make {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+      // object-fit: cover;
+      width: 200px;
+      aspect-ratio: 1/1;
+    }
+
+    & textarea,
+    & input:not([type="file"]) {
+      background-color: #98e4dc;
+      border: none;
+      color: #717171;
+      font-size: 20px;
+      font-family: "intic";
+      text-align: center;
+      box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+      margin: 7px 0;
+      outline: none;
+    }
+
+    // & textarea{
+    //   width: 100%;
+    // }
+
+    & textarea {
+      width: 100%;
+      flex-grow: 1;
+      flex-basis: 200px;
+      word-break: break-all;
+    }
+
+    & .inputs {
+      width: 100%;
+      display: flex;
+      & input {
+        flex-grow: 1;
+        width: 155px;
+      }
+    }
+  }
+
+  &__wrapper {
+    flex-grow: 1;
+    margin-top: 20px;
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    flex-grow: 0;
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+
+  &__nothing {
+    display: flex;
+    flex-grow: 1;
+  }
+}
+
+.profile__pasport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.profile__name {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.profile__setting {
+  margin-left: 20px;
+  display: flex;
+  align-self: start;
+}
+
+.profile__title {
+  margin-bottom: 40px;
+}
+
+.profile__avatar {
+  border-radius: 100%;
+  width: 160px;
+  margin-right: 50px;
+}
+
+.card {
+  width: 90%;
+  flex-grow: 0;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(to right, #85dfd9, #09ccbf);
+  justify-self: center;
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  &__text {
+    padding: 0 20px 3px;
+    text-align: start;
+    font-size: 20px;
+  }
+
+  &__cost {
+    color: #225f6d;
+  }
+
+  &__promo {
+    margin-left: 10%;
+    text-decoration: line-through;
+    color: grey;
+    font-size: 14px;
+  }
+
+  &__title {
+    max-width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &__functions {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+
+  &__button {
+    padding: 6px;
+    font-size: 20px;
+  }
+
+  &__del {
+    @extend .card__button;
+    background-color: rgb(255, 84, 84);
+  }
+
+  &__change {
+    @extend .card__button;
+    background-color: rgb(122, 122, 252);
+  }
+
+  &__buy {
+    @extend .card__button;
+    background-color: rgb(116, 252, 121);
+  }
+
+  &__popup {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% 50%);
+  }
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 140px;
+
+  &__button {
+    width: 40%;
+  }
+}
+
+.product-shell {
+  display: grid;
+  padding: 0 10%;
+  gap: 20px 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navigation {
+  border-radius: 20px;
+  width: 90vw;
+  position: fixed;
+  margin: 0 5vw;
+  bottom: 10px;
+  background: linear-gradient(to right, #16cec2, #00fdec);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 -3px 4 rgba($color: #ffffff, $alpha: 0.55);
+
+  &__button {
+    margin: 20px;
+    width: 60px;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #225f6d;
+    background: transparent;
+    box-shadow: 0 2px 9px rgba($color: #000000, $alpha: 0.25);
+  }
+}
+
+.card-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+
+  & button {
+    margin: 4px;
+    box-shadow: none;
+    width: 40%;
+  }
+
+  & img {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    & p {
+      margin-left: 10px;
+    }
+  }
+
+  &__cost {
+    text-align: start;
+    margin-left: 30px;
+  }
+
+  &__main {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.25);
+  }
+
+  &__info {
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+}
+
+.fullscreen-popup-overlay {
+  position: fixed; /* Важно: fixed вместо absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Убедитесь, что попап поверх всего */
+}
+
+.fullscreen-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto; /* Прокрутка, если контент не помещается */
+}
+
+.text-block{
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-height: 30vh;
+}
