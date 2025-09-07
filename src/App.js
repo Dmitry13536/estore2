@@ -1,7 +1,7 @@
 import "./App.scss";
 import Start from "./Components/Start";
 import Login from "./Components/Login";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 import Singup from "./Components/Singup";
 import Profile from "./Components/profile-pages/Profile";
 import Settings from "./Components/profile-pages/Settings";
@@ -19,7 +19,7 @@ function App() {
   
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Start />} />
         <Route path="/login" element={<Login />} />
@@ -38,7 +38,7 @@ function App() {
         <Route path="/main-page/:id/:productId" element={<CardPage />} />
         <Route path="/profile/products/make/:id" element={<MakeCard />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
