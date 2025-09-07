@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import ButtonMint from "../UI/button/ButtonMint";
-import { addUsersProduct, deleteUser } from "../../features/userSlice";
+import { deleteUser } from "../../features/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteUsersProducts } from "../../features/productSlice";
 
@@ -9,7 +9,7 @@ const Settings = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const {users} = useSelector(state => state.users);
-  const userProducts = users.find(user => user.id == id).products;
+  const userProducts = users.find(user => Number(user.id) === Number(id)).products;
 
   const handleDeleteUser = () => {
     navigate(`/`);

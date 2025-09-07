@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import imgdefault from "../assets/test-good.jpg";
 import { useNavigate, useParams } from "react-router-dom";
 import {
@@ -15,7 +15,7 @@ import {
   faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 import { deleteGood } from "../features/productSlice";
-import CardPopup from "./CardPopup";
+// import CardPopup from "./CardPopup";
 
 const Card = ({
   data = { title: "Sample text", cost: 100, img: imgdefault },
@@ -26,7 +26,7 @@ const Card = ({
   // const [isPopupOpen, SetIsPopupOpen] = useState(false);
   const { id } = useParams();
   const {users} = useSelector(state => state.users);
-  const user = users.find((user) => Number(user.id) == Number(id));
+  const user = users.find((user) => Number(user.id) === Number(id));
   const [inCart, setInCart] = useState(user.cart.includes(data.id));
   const navigate = useNavigate();
   const dispatch = useDispatch();

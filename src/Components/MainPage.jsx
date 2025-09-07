@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+// import { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import Card from "./Card";
 import Logo from "./Logo";
@@ -11,9 +11,6 @@ const MainPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log(products);
-  }, []);
 
   const productRender = () => {
     if (products.length === 0) {

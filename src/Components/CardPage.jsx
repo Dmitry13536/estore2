@@ -8,7 +8,7 @@ const CardPage = () => {
     const dispatch = useDispatch();
     const {id,productId} = useParams();
     const {products, users} = useSelector(state => state);
-    const user = users.users.find(user => user.id === id);
+    // const user = users.users.find(user => user.id === id);
     const product = products.products.find(product => product.id === productId);
     
     return (

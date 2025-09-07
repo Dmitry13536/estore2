@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Logo from "./Logo";
+// import Logo from "./Logo";
 import ButtonBlue from "./UI/button/ButtonBlue";
 import InputReg from "./UI/input/InputReg";
 import { Link } from "react-router-dom";

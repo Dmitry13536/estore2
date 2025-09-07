@@ -1,7 +1,7 @@
 import ButtonBlue from "./UI/button/ButtonBlue";
 import Logo from "./Logo";
-import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+// import { useEffect } from "react";
 
 
 const Start = () => {

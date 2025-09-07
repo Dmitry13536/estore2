@@ -1,7 +1,7 @@
 import "./App.scss";
 import Start from "./Components/Start";
 import Login from "./Components/Login";
-import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import Singup from "./Components/Singup";
 import Profile from "./Components/profile-pages/Profile";
 import Settings from "./Components/profile-pages/Settings";

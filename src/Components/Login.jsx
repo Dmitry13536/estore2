@@ -2,7 +2,7 @@ import Logo from "./Logo";
 import ButtonBlue from "./UI/button/ButtonBlue";
 import InputReg from "./UI/input/InputReg";
 import { Link, useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 import { useState } from "react";
 
 const Login = () => {
