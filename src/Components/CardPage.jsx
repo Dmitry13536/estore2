@@ -7,7 +7,7 @@ const CardPage = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const {id,productId} = useParams();
-    const {products, users} = useSelector(state => state);
+    const {products} = useSelector(state => state);
     // const user = users.users.find(user => user.id === id);
     const product = products.products.find(product => product.id === productId);
     
